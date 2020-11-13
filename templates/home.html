@@ -1,0 +1,21 @@
+<h1>Word count..!!</h1>
+
+<a href="{% url 'about' %}">About</a>
+
+<!-- <form action="count"> -->
+<form action="{% url 'count' %}">   <!-- here we return count.html page-->
+     <textarea cols="40" rows="10" name="fulltext"></textarea>
+    <br/>
+    <input type="submit" value="Count!"/>
+
+</form>
+
+
+<!--<form action="{% url 'home' %}">  here 'home' is home.html template -->
+<form action="/dis/">  <!-- here 'dis' is url name  so both are correct ways-->
+    <input type="text" name="enteredname"/>
+    <br/>
+    <input type="submit" value="display"/>
+</form>
+
+{{ dis_name }}
